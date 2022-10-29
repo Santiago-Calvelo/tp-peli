@@ -11,7 +11,11 @@ function Form() {
       "Sinopsis" : '',
       "Califs" : ''
       });
-
+    
+      function reload(event) {
+        window.location.reload();
+      }
+    
       function handleSubmit(event) {
         event.preventDefault()
         console.log(form)
@@ -114,8 +118,9 @@ function Form() {
       })
     }}
     />
-    <input 
+     <input 
     type = "submit"
+    onClick={reload}
     />
     </form>
   )
